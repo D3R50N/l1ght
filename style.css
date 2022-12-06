@@ -23,7 +23,7 @@
     line-height: 1.5;
 }
 * {
-    cursor: "none";
+    cursor: none;
     transition-duration: .4s;
 }
 
