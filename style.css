@@ -1,0 +1,67 @@
+:root {
+    --light-r: 0px;
+    --light-s: 3000px;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: #16161D;
+}
+
+::selection, .bg-black {
+    color: white;
+    background: #16161D;
+}
+
+.card a:hover {
+    text-decoration: none;
+    box-shadow : 0px 0px 10px rgb(147, 133, 133)
+}
+
+.card h1{
+    line-height: 1.5;
+}
+* {
+    cursor: "";
+    transition-duration: .4s;
+}
+
+.mask {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    mix-blend-mode: multiply;
+    /* z-index: -1; */
+    pointer-events: none;
+    z-index: 1;
+
+}
+
+
+
+.light {
+    width: var(--light-r);
+    height: var(--light-r);
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    position: absolute;
+    box-shadow: 0px 0px var(--light-s) calc(var(--light-s)*.8) rgb(255, 255, 255);
+    mix-blend-mode: lighten;
+    z-index: 1000;
+}
+
+.disabled {
+    z-index: 2;
+    position: absolute;
+    box-shadow: 0px 0px 100px 5px rgb(238, 223, 13);
+    mix-blend-mode: lighten;
+}
+
+.container button {
+    position: absolute;
+    /* z-index: -1; */
+}
