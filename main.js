@@ -39,7 +39,7 @@ btns.forEach((btn) => {
            }
                 
            
-            document.querySelector("card").classList.remove("d-none")
+            document.querySelector(".card").classList.remove("d-none")
         }
     })
 })
