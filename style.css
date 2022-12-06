@@ -26,6 +26,9 @@
 * {
     cursor: none;
 }
+.card, .card *{
+    cursor: default;
+}
 
 .mask {
     background-color: black;
