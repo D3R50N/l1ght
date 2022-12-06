@@ -16,15 +16,15 @@
 
 .card a:hover {
     text-decoration: none;
-    box-shadow : 0px 0px 10px rgb(147, 133, 133)
+    box-shadow: 0px 0px 10px rgb(147, 133, 133)
 }
 
-.card h1{
+.card h1 {
     line-height: 1.5;
 }
+
 * {
     cursor: none;
-    transition-duration: .4s;
 }
 
 .mask {
@@ -43,6 +43,7 @@
 
 
 
+
 .light {
     width: var(--light-r);
     height: var(--light-r);
@@ -52,6 +53,7 @@
     box-shadow: 0px 0px var(--light-s) calc(var(--light-s)*.8) rgb(255, 255, 255);
     mix-blend-mode: lighten;
     z-index: 1000;
+
 }
 
 .disabled {
@@ -59,6 +61,8 @@
     position: absolute;
     box-shadow: 0px 0px 100px 5px rgb(238, 223, 13);
     mix-blend-mode: lighten;
+    transition-duration: .4s;
+
 }
 
 .container button {

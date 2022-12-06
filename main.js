@@ -25,21 +25,23 @@ btns.forEach((btn) => {
         btn.classList.add("disabled"); 
         lights_on++;
 
-        document.documentElement.style.setProperty('--light-s', (30*(lights_on+1)) + "px");
+        document.documentElement.style.setProperty('--light-s', (50*(lights_on+1)) + "px");
         if (lights_on >= btns.length) {
 
             document.querySelector(".mask").classList.add("d-none");
             document.querySelectorAll(".container button").forEach((b) => {
                 b.classList.add("d-none");
             })
+            document.querySelector(".card").classList.remove("d-none")
+
+            // alert(document.getElementsByTagName("*").length)
            for (let index = 0; index <  document.getElementsByTagName("*").length; index++) {
             const el=  document.getElementsByTagName("*")[index];
-               el.style.cursor = "";
-
+            //    el.style.removeProperty("cursor");
+               el.style.setProperty("initial");
            }
                 
            
-            document.querySelector(".card").classList.remove("d-none")
         }
     })
 })
